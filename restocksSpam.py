@@ -9,6 +9,7 @@ from colorama import Fore, Back, Style
 email = 'INSERT EMAIL'
 password = 'INSERT PASSWORD'
 discordWebhook = "INSERT DISCORD WEBHOOK"
+delay = 120 #seconds
 
 headers = {
     'authority': 'restocks.net',
@@ -93,7 +94,7 @@ while True:
         else:
             print(Fore.YELLOW + "No price update for item "+str(name) + Fore.RESET)
     
-    time.sleep(30)
+    time.sleep(delay)
 
            
 
